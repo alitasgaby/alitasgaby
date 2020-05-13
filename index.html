@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<title>Alitas Gaby</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+</style>
+<img src="C:\Users\Usuario\Desktop\Alitas Gaby\img\95905942_555876491974090_4601037514600349696_n.png"style="width:90% height:45%">
+
+
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ACERCA</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACTO</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Abierto de 4pm a 11pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-red">Ver menú</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">EL MENÚ</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Alitas');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Alitas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bebidas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+      </a>
+    </div>
+
+    <div id="Alitas" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Precios</b></h1><span class="w3-center w3-tag w3-dark-grey w3-round">PAQUETE CHICO $75</span>
+      <span class="w3-right w3-tag w3-dark-grey w3-round">PAQUETE GRANDE $135</span></h1>
+      <hr>
+      <h1><b>Habanero</b></h1>
+       <p class="w3-text-grey">Picante</p>
+      <hr>
+   
+      <h1><b>Miel Habanero</b></h1>
+      <p class="w3-text-grey">No pincante</p>
+      <hr>
+      
+      <h1><b>Piña Habanero</b></h1>
+      <p class="w3-text-grey">Picante</p>
+      <hr>
+
+      <h1><b>Mango Habanero</b></h1>
+      <p class="w3-text-grey">Picante</p>
+      <hr>
+
+      <h1><b>BBQ Habanero</b></h1>
+      <p class="w3-text-grey">Picante</p>
+      <hr>
+
+      <h1><b>Chamoy con Miguelito</b></h1>
+      <p class="w3-text-grey">No picante</p>
+      <hr>
+
+      <h1><b>Parmesano</b></h1>
+      <p class="w3-text-grey">No picante</p>
+      <hr>
+
+      <h1><b>Agridulce</b></h1>
+      <p class="w3-text-grey">No picante</p>
+      <hr>
+
+      <h1><b>BBQ</b></h1>
+      <p class="w3-text-grey">No picante</p>
+      <hr>
+
+      <h1><b>Tajin</b></h1>
+      <p class="w3-text-grey">No picante</p>
+      <hr>
+
+      <h1><b>Buffalo</b></h1>
+      <p class="w3-text-grey">No picante</p>
+      <hr>
+
+      <h1><b>Guacacil</b><span class="w3-tag w3-red w3-round">Nuevo</span></h1>
+      <p class="w3-text-grey">Muy picante</p>
+    </div>
+
+    <div id="Bebidas" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Agua de jamaica   </b> <span class="w3-right w3-tag w3-dark-yellow w3-round">Jarra 2LT $30 y un vaso $8</span></h1>
+      <hr>
+        
+   
+      <h1><b>Agua de horchata</b><span class="w3-right w3-tag w3-dark-grey w3-round">Jarra 2LT $30 y un vaso $8</span></h1>
+    
+
+      <hr>
+      
+      <h1><b>Refresco</b><span class="w3-right w3-tag w3-dark-yellow w3-round">1.5LT $25 y 600ml $13</span>
+      <hr>
+
+      <h1><b>Jugo del valle</b><span class="w3-right w3-tag w3-dark-grey w3-round">1.5LT $25 y 600ml $16</span>
+        <hr>
+     
+     <h1><b>Agua simple</b><span class="w3-right w3-tag w3-dark-yellow w3-round">Botella 600ml $10</span>
+    </div>
+
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Pepperoni</b><span class="w3-right w3-tag w3-dark-grey w3-round">MED. $80</span></h1>
+      <span class="w3-right w3-tag w3-dark-yellow w3-round">GRE. $120</span></h1>
+      <p class="w3-text-grey">Pepperoni</p>
+      <hr>
+   
+      <h1><b>Quesos</b> <span class="w3-right w3-tag w3-dark-grey w3-round">MED. $80</span></h1>
+      <span class="w3-right w3-tag w3-dark-yellow w3-round">GRE. $120</span></h1>
+      <p class="w3-text-grey">Hebra, parmesano...</p>
+      <hr>
+      
+      <h1><b>Hawaiana</b> <span class="w3-right w3-tag w3-dark-grey w3-round">MED. $80</span></h1>
+      <span class="w3-right w3-tag w3-dark-yellow w3-round">GRE. $120</span></h1>
+      <p class="w3-text-grey">Jamón y piña</p>
+      <hr>
+      
+      <h1><b>Ranch</b><span class="w3-right w3-tag w3-dark-grey w3-round">MED. $80</span></h1>
+      <span class="w3-right w3-tag w3-dark-yellow w3-round">GRE. $120</span></h1>
+      <p class="w3-text-grey">Aderezp ranch</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red  w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">ACERCA</h1>
+    <p>¡Estamos a tu servicio! Alitas Gaby comenzó desde un pequeño negocio y solo entregas a domicio, ¡Ahora esta en proceso de constrccuón el restaurante!</p>
+    <img src="C:\Users\Usuario\Desktop\Alitas Gaby\img\img_alitas_hot_wings_con_la_receta_secreta_12250_600_square.jpg" style="width:250px" class="w3-right" alt="Alitas preparadas"></p>
+    <p>Estamos orgullosos de nuestras ventas.</p>
+    <img src="C:\Users\Usuario\Desktop\Alitas Gaby\img\alitas-adobadas-receta-casera.jpg" style="width:50%" class="w3-margin-top w3-margin-bottom" alt="Alitas preparadas">
+    <h1><b>Horario</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Lunes 2:00pm - 11:00pm</p>
+        <p>Martes 2:00pm - 11:00pm</p>
+        <p>Miércoles 2:00pm - 11:00pm</p>
+        <p>Jueves 2:00pm - 11:00pm</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Viernes 2:00pm - 11:00pm</p>
+        <p>Sábado 2:00pm - 11:00pm</p>
+        <p>Domingo 2:00pm - 10:00pm</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="C:\Users\Usuario\Desktop\Alitas Gaby\img\aitas-de-pollo-a-la-americana-o-buffalo-wings-m.jpg" style="width:100%;">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="myMap">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contacto</h1>
+    <p><p class="w3-xxlarge">Encuentranos en Misantla, Veracruz. Calle Venustiano Carranza, colonia Centro, número 124 </p>
+    <p><span class="w3-tag">PARA TU INFORMACIÓN</span><p class="w3-xxlarge">Solo se realizan pedidos a domicilio llamando al 2351001883 o al 3234762</p>
+    <footer class="w3-center w3-black w3-padding-40 w3-xxlarge">
+  <p>Contactanos por: <a href="https://www.facebook.com/profile.php?id=100007868959452&epa=SEARCH_BOX" title="W3.CSS" target="_blank" class="w3-hover-text-green">FACEBOOK </a></p>
+</footer>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-display-center w3-black w3-padding-30 w3-xxlarge">
+  <p>derechos de autor<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">W3.CSS</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
